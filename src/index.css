@@ -117,7 +117,8 @@ h1 {
   display: flex;
 }
 
-.error {
+.error,
+.warning {
   color: red;
   text-align: center;
 }
@@ -135,4 +136,9 @@ h1 {
   .bottom .wind {
     margin: 1rem 0;
   }
+}
+
+img {
+  width: 120px; /* Adjust the size as needed */
+  height: auto;
 }
