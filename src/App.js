@@ -108,14 +108,7 @@ const getWeatherWarning = (weatherCode) => {
         </div>
         <div className="temp">
             <h1>{data.main ? (((data.main.temp) - 32) * 5 / 9).toFixed() : null}°C</h1>
-            <div className="weather-icon">
-      {data.weather && (
-        <img
-          src={`https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`}
-          alt="Weather Icon"
-        />
-      )}
-    </div>
+            <img src={data.weather ? "https://openweathermap.org/img/wn/"+data.weather[0].icon+"@x.png": null } />
           </div>
           
         <div className='description'>
